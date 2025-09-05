@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>反射神経テスター</title>
+    <link rel="stylesheet" href="./style.css" />
+    <meta name="color-scheme" content="light dark">
+</head>
+
+<body>
+    <main class="container" role="main">
+        <header class="header">
+            <h1>反射神経テスター</h1>
+            <p class="subtle">赤 → 緑 に変わったら クリック / タップ（Space / Enter も可）</p>
+        </header>
+
+        <section class="card">
+            <!-- クリック / タップ領域 -->
+            <button id="pad" class="pad pad--idle" aria-live="polite" aria-atomic="true" aria-describedby="hint"
+                type="button">
+                <span id="padLabel" class="pad__label">クリックまたはタップで開始</span>
+            </button>
+            <p id="hint" class="hint">待機中（赤）の間に押すとフライング</p>
+
+            <!-- 結果と統計 -->
+            <div class="stats">
+                <div class="stat">
+                    <span class="stat__label">今回</span>
+                    <span id="lastMs" class="stat__value">—</span>
+                </div>
+                <div class="stat">
+                    <span class="stat__label">ベスト</span>
+                    <span id="bestMs" class="stat__value">—</span>
+                </div>
+                <div class="stat">
+                    <span class="stat__label">平均（直近10回）</span>
+                    <span id="avgMs" class="stat__value">—</span>
+                </div>
+                <div class="stat">
+                    <span class="stat__label">試行回数</span>
+                    <span id="attempts" class="stat__value">0</span>
+                </div>
+            </div>
+
+            <div class="actions">
+                <button id="startBtn" class="btn" type="button">もう一度</button>
+                <button id="resetBtn" class="btn btn--ghost" type="button" aria-label="統計情報をリセット">統計リセット</button>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <small>キーボード：Space / Enter でも操作可</small>
+        </footer>
+    </main>
+
+    <script defer src="./script.js"></script>
+</body>
+
+</html>
