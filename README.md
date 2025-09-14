@@ -4,11 +4,7 @@
 赤 → 緑 に変わったらできるだけ早くクリック／タップ。
 
 ## デモ
-- GitHub Pages:
-  <a href="https://seiya-matsuoka.github.io/reflex-tester-app/"
-    target="_blank" rel="noopener noreferrer">
-    https://seiya-matsuoka.github.io/reflex-tester-app/
-  </a>
+- GitHub Pages: https://seiya-matsuoka.github.io/reflex-tester-app/
 
 ## スクリーンショット
 <div align="center">
