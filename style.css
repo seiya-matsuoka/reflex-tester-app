@@ -51,6 +51,7 @@ body{
   box-shadow: var(--shadow);
 }
 
+/* クリック/タップ領域 */
 .pad{
   width: 100%;
   height: clamp(280px, 50vh, 520px);
@@ -67,6 +68,7 @@ body{
 
 .pad:active{ transform: scale(.997); }
 
+/* 状態に応じた配色 */
 .pad--idle{ background: var(--idle); }
 .pad--wait{ background: var(--warn); }
 .pad--ready{ background: var(--ok); }
@@ -84,6 +86,7 @@ body{
   font-size: .9rem;
 }
 
+/* 統計表示のレイアウト */
 .stats{
   margin-top: 18px;
   display: grid;
